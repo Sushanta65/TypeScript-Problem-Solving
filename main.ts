@@ -5,10 +5,11 @@ function formatString(input: string, toUpper: boolean  = true) : string {
     return toUpper? input.toUpperCase() : input.toLowerCase()
 }
 
-// console.log(formatString('hello'))
+
 
 
 // Problem 2
+
 const books = [
     { title: "Book A", rating: 4.5 },
     { title: "Book B", rating: 3.2 },
@@ -19,7 +20,6 @@ function filterByRating(items: { title: string; rating: number }[]): { title: st
     return items.filter(item => item.rating >= 4)
 }
 
-// console.log(filterByRating(books))
 
 
 
@@ -29,7 +29,7 @@ function concatenateArrays<T>(...arrays: T[][]): T[]{
     return arrays.reduce((accumulator, currentValue) => accumulator.concat(currentValue), []);
 }
 
-// console.log(concatenateArrays([1, 2], [3, 4], [5])); 
+
 
 
 
@@ -50,7 +50,6 @@ class Vehicle{
     }
 }
 
-
 class Car extends Vehicle{
     private model: string;
 
@@ -64,6 +63,7 @@ class Car extends Vehicle{
     }
 }
 
+
 // Problem 5
 
 function processValue(value: string | number): number{
@@ -75,5 +75,26 @@ function processValue(value: string | number): number{
 }
 
 
+// Problem 6
+
+interface Product {
+    name: string;
+    price: number;
+  }
+
+  const products = [
+    { name: "Pen", price: 10 },
+    { name: "Notebook", price: 25 },
+    { name: "Bag", price: 50 }
+  ];
+  
+  function getMostExpensiveProduct(products: Product[]): Product | null{
+    if(products.length === 0){
+        return null;
+    }
+    return products.reduce((maxProduct, currentProduct) => 
+        currentProduct.price > maxProduct.price ? currentProduct : maxProduct
+      );
+  }
 
 
