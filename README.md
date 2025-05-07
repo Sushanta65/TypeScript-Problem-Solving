@@ -19,3 +19,21 @@ Defferences:
 3. Interface can extended using the extends keyword but in the type we use & intersection to combine them.
 4. Interface primarily use for defining object structure. But Type is more flexible for function, union, tuple etc.
  
+
+Q-2: How does TypeScript help in improving code quality and project maintainability?
+
+Ans: TypeScript is like JavaScript, but smarter. It helps us to write code that is correct and easy to fix. It makes big projects easier to work. Basically its called the superset of JavaScript. TypeScript help us to write better code with compile time error showing or catching. Here are some important role of TypeScript:
+1. Find Error Early: Using TypeScript we can see the error on compile time and we can solved it quickly.
+    ```ts
+        let age: number = "twenty"; // This is wrong, because "twenty" is not a number
+
+2. Code is Easy to Read : TypeScript codes are very easy to read and understand. Here is the example:
+    ```ts
+    function greet(user: { name: string; age: number }) {
+    return `Hello, ${user.name}`;
+    }
+
+    ```
+    The Codes are very easy to understand.
+
+3. 
