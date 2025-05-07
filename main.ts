@@ -1,11 +1,10 @@
-// Problem 1
+
 
 function formatString(input: string, toUpper: boolean = true): string {
   return toUpper ? input.toUpperCase() : input.toLowerCase();
 }
 
 
-// Problem 2
 
 const books = [
   { title: "Book A", rating: 4.5 },
@@ -19,7 +18,6 @@ function filterByRating(
   return items.filter((item) => item.rating >= 4);
 }
 
-// Problem 3
 
 function concatenateArrays<T>(...arrays: T[][]): T[] {
   return arrays.reduce(
@@ -28,7 +26,6 @@ function concatenateArrays<T>(...arrays: T[][]): T[] {
   );
 }
 
-// Problem 4
 
 class Vehicle {
   private make: string;
@@ -59,7 +56,6 @@ class Car extends Vehicle {
 const myCar = new Car("Toyota", 2020, "Corolla");
 
 
-// Problem 5
 
 function processValue(value: string | number): number {
   if (typeof value === "string") {
@@ -69,7 +65,6 @@ function processValue(value: string | number): number {
   }
 }
 
-// Problem 6
 
 interface Product {
   name: string;
@@ -91,7 +86,6 @@ function getMostExpensiveProduct(products: Product[]): Product | null {
   );
 }
 
-// Problem 7
 
 enum Day {
   Monday,
@@ -112,8 +106,6 @@ function getDayType(day: Day): string {
 }
 
 
-
-// Problem 8
 
 async function squareAsync(n: number): Promise<number> {
   if (n < 0) {
