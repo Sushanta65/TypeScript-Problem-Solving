@@ -4,6 +4,7 @@ function formatString(input: string, toUpper: boolean = true): string {
   return toUpper ? input.toUpperCase() : input.toLowerCase();
 }
 
+
 // Problem 2
 
 const books = [
@@ -55,6 +56,8 @@ class Car extends Vehicle {
     return `Model: ${this.model}`;
   }
 }
+const myCar = new Car("Toyota", 2020, "Corolla");
+
 
 // Problem 5
 
@@ -108,7 +111,6 @@ function getDayType(day: Day): string {
   }
 }
 
-console.log(getDayType(Day.Monday));
 
 
 // Problem 8
