@@ -1,34 +1,21 @@
-# TypeScript Assignment - Interface vs Type
+Questions Answers
 
-## ✨ Definition
+Q-1: What are some differences between interfaces and types in TypeScript?
 
-In TypeScript, both `interface` and `type` are used to define the **structure of data**. They help us describe the shape of objects, functions, or other types, making our code more readable, maintainable, and error-free.
+Ans: In TypeScript interface and type both are using for defining structure of data. There are some difference between interface and type.
 
----
+Defferences:
+1. Interface declar with interface keyword and type declar with type keyword.
+    ```ts
+    //Interface declar like this
+    interface Car{
+        name: "Toyota";
+        model: "RMX2030"
+    }
+    //type declar like this
+    type Animal = { name: string };
+2. If we delar interface multiple time then it will be marged. Its called declaration marging. But its not happed with type, if we declar type then It can't be modifing.
 
-## 🔍 Differences Between Interface and Type
-
-| Feature                     | `interface`                                | `type`                                              |
-|----------------------------|--------------------------------------------|-----------------------------------------------------|
-| ✅ Declaration              | Declared using `interface` keyword         | Declared using `type` keyword                       |
-| 🔁 Declaration Merging      | Supported — multiple declarations merge    | Not supported — duplicate declarations give error   |
-| 🔗 Extension                | Uses `extends` keyword                     | Uses intersection `&` to combine types              |
-| 🧱 Use Case                 | Best for defining object structures        | Can define objects, unions, tuples, primitives, etc.|
-| 💡 Flexibility              | More structured and scalable               | More flexible and powerful for complex types        |
-
----
-
-## 📘 Examples
-
-### Interface Example:
-```ts
-interface Person {
-  name: string;
-  age: number;
-}
-
-interface Person {
-  gender: string;
-}
-
-// Merged: { name: string, age: number, gender: string
+3. Interface can extended using the extends keyword but in the type we use & intersection to combine them.
+4. Interface primarily use for defining object structure. But Type is more flexible for function, union, tuple etc.
+ 
