@@ -1,6 +1,6 @@
-Questions Answers
+## Questions Answers
 
-Q-1: What are some differences between interfaces and types in TypeScript?
+### Q-1: What are some differences between interfaces and types in TypeScript?
 
 Ans: In TypeScript interface and type both are using for defining structure of data. There are some difference between interface and type.
 
@@ -20,7 +20,7 @@ Defferences:
 4. Interface primarily use for defining object structure. But Type is more flexible for function, union, tuple etc.
  
 
-Q-2: How does TypeScript help in improving code quality and project maintainability?
+### Q-2: How does TypeScript help in improving code quality and project maintainability?
 
 Ans: TypeScript is like JavaScript, but smarter. It helps us to write code that is correct and easy to fix. It makes big projects easier to work. Basically its called the superset of JavaScript. TypeScript help us to write better code with compile time error showing or catching. Here are some important role of TypeScript:
 1. Find Error Early: Using TypeScript we can see the error on compile time and we can solved it quickly.
@@ -36,4 +36,6 @@ Ans: TypeScript is like JavaScript, but smarter. It helps us to write code that 
     ```
     The Codes are very easy to understand.
 
-3. 
+3. Good for Big Projects: In a big projects, it is hard to remember everything. TypeScript helps us to keep things in order and organized.
+
+4. Catches Hidden Bugs: TypeScript finds small problems that are hard to see in normal JavaScript. Thats why we should use TypeScript.
